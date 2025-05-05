@@ -21,7 +21,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section class="home"><!-- home / h1 / id home / img -->
         <h1 id="home">Agence2Voyages</h1>
-        <img class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
+        <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
     </section>
 
     <!-- * animation plane -->
@@ -68,15 +68,92 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
 
-    <details class="dropdown">
+    <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre compagnie Agence2Voyages.
+            <br>
+            Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City.
+            <br>
+            Au choix
+        </h1>
         <summary class="btn m-1">Destinations</summary>
         <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li><a href="destination.html">Seychelles</a></li>
-            <li><a href="destination.html">Tibet</a></li>
+            <li><a class="li-destination" href="destination.html">Seychelles</a></li>
+            <li><a class="li-destination" href="destination.html">Tibet</a></li>
+            <li><a class="li-destination" href="destination.html">Londres</a></li>
             <a></a>
         </ul>
     </details>
 
+    <!-- * Témoignages Section -->
+
+        <section class="une" id="avis">
+            <div class="container-une">
+
+                <!-- Témoignage 1 -->
+                <h2 class="text-une">Témoignages</h2>
+                <div class="grid">
+                    <div class="tem1">
+                        <div class="tem1">
+                            <div class="entete"> P.E</div>
+                            <div>
+                                <h4 class="une-font">Paul Eluard</h4>
+                            </div>
+                        </div>
+                        <p class="une-comm-font">"Notre voyage au Tibet fut magique. Nous vous remercions." </p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="grid">
+                    <div class="tem1">
+                        <div class="tem1">
+                            <div class="entete"> L.B</div>
+                            <div>
+                                <h4 class="une-font">Léon Blum</h4>
+                            </div>
+                        </div>
+                        <p class="une-comm-font">"Malgrès un départ retardé par ces intempéries. L'arrivée sur cette
+                            magnifique plage des Seychelles nous a tout fait oublié. Nous y retournerons."
+                        </p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="grid">
+                    <div class="tem1">
+                        <div class="tem1">
+                            <div class="entete"> J.D</div>
+                            <div>
+                                <h4 class="une-font">Jean Delafontaine</h4>
+                            </div>
+                        </div>
+                        <p class="une-comm-font">"Merci, Londres fut une expérience assez particulière, avec la reine
+                            d'Angletrerre puis dans la foulée des bandes de jeunes et partout des taxis. Super voyage,
+                            un peu court."</p>
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <!-- * FOOTER -->
 
@@ -92,7 +169,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <script src="../script/script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
 `
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
