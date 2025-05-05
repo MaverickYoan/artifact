@@ -2,8 +2,8 @@ import "./style.css"
 
 document.getElementById("app")!.innerHTML = `
     <div class="min-h-screen bg-black text-white font-montserrat flex flex-col">
-        <header class="container mx-auto relative md:grid grid-cols-3 justify-between items-center md:h-34">
-            <h1 class="hidden md:block">Agence2Voyage</h1>
+        <header class="container mx-auto relative md:flex justify-between items-center top-8">
+            <h1 class="hidden md:block md:py-0">Agence2Voyage</h1>
             <img alt="Logo" class="w-12.5 mx-auto rounded-full"
                  src="/images/logo.png">
         
@@ -11,12 +11,12 @@ document.getElementById("app")!.innerHTML = `
             <nav class="hidden md:flex gap-10 text-xl">
                 <a href="../index.html">Welcome</a>
                 <a href="#destinations">Destinations</a>
-                <a href="">Contact</a>
+                <a href="../contact.html">Contact</a>
             </nav>
         
             <!--Menu burger-->
-            <button class="md:hidden absolute top-1/2 right-10 -translate-y-1/2" id="burger">
-                <svg class="fill-white w-15" id="fi_5358649"
+            <button class="md:hidden absolute top-10 right-10" id="burger">
+                <svg class="fill-white w-15 h-15" id="fi_5358649"
                      viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                     <g>
@@ -35,183 +35,130 @@ document.getElementById("app")!.innerHTML = `
             </nav>
         </header>
         <main class="container mx-auto grow">
-            <section class="mt-20 md:mt-40" id="destinations">
+            <section class="mt-40" id="destinations">
+                <!-- Tibet -->
                 <div class="grid md:grid-cols-2 gap-10 justify-between pb-20">
-                    <div class="order-2 md:order-1">
-                        <div class="carousel w-full">
-                            <div id="slide1" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(1).jpg" alt="Tibet" class="w-full">
-                                    <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-2 md:p-5">
-                                        Diapo 1
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide8">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❯</a>
-                                </div>
+                    <!-- Carousel Tibet -->
+                    <div class="relative w-full" data-carousel="slide" id="tibet">
+                        <!-- Carousel wrapper-->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                            <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Tibet (1)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Tibet/Tibet%20(1).jpg">
                             </div>
-                            <div id="slide2" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(2).jpg" class="w-full" alt="Tibet 2"/>
-                                    <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-2 md:p-5">
-                                        Diapo 2
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❯</a>
-                                </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Tibet (2)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Tibet/Tibet%20(2).jpg">
                             </div>
-                            <div id="slide3" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(3).jpg" alt="Tibet 3" class="w-full">
-                                    <figcaption class="absolute bg-black/75 p-2 md:p-5 bottom-0 left-0 right-0">
-                                        Diapo 3
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❯</a>
-                                </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Tibet (3)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Tibet/Tibet%20(3).jpg">
                             </div>
-                            <div id="slide4" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(4).jpg" alt="Tibet 4" class="w-full">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 p-2 md:p-5 bg-black/75">Diapo 4</figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❯</a>
-                                </div>
-                            </div>
-                            <div id="slide5" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(5).jpg" alt="Tibet 5" class="w-full">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 p-2 md:p-5 bg-black/75">
-                                        Diapo 5
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide6">❯</a>
-                                </div>
-                            </div>
-                            <div id="slide6" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(6).jpg" alt="Tibet 6" class="w-full">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
-                                        Diapo 6
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide7">❯</a>
-                                </div>
-                            </div>
-                            <div id="slide7" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(7).jpg" alt="Tibet 7" class="w-full">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
-                                        Diapo 7
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide6">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide8">❯</a>
-                                </div>
-                            </div>
-                            <div id="slide8" class="carousel-item relative w-full">
-                                <figure class="relative w-full">
-                                    <img src="/images/Tibet/Tibet%20(8).jpg" alt="Tibet 8" class="w-full">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
-                                        Diapo 8
-                                    </figcaption>
-                                </figure>
-                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide7">❮</a>
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❯</a>
-                                </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Tibet (4)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Tibet/Tibet%20(4).jpg">
                             </div>
                         </div>
-                        <div class="flex w-full justify-center gap-2 py-2 carousel-menu">
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide1">1</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide2">2</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide3">3</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide4">4</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide5">5</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide6">6</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide7">7</a>
-                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide8">8</a>
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                            <button aria-current="true" aria-label="Slide 1" class="w-3 h-3 rounded-full" data-carousel-slide-to="0" type="button"></button>
+                            <button aria-current="false" aria-label="Slide 2" class="w-3 h-3 rounded-full" data-carousel-slide-to="0" type="button"></button>
+                            <button aria-current="false" aria-label="Slide 3" class="w-3 h-3 rounded-full" data-carousel-slide-to="0" type="button"></button>
+                            <button aria-current="false" aria-label="Slide 3" class="w-3 h-3 rounded-full" data-carousel-slide-to="0" type="button"></button>
                         </div>
+                        <!-- Slider controls -->
+                        <button class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev type="button">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 1 1 5l4 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next type="button">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m1 9 4-4-4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
                     </div>
-                    <div class="flex flex-col text-center pt-5 md:pt-0 order-1 md:order-2">
+                    <div class="flex flex-col text-center pt-5 md:pt-0">
                         <p>Destination 1</p>
-                        <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet</p>
+                        <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet
+                        </p>
+                    </div>
+                </div>
+                <!-- Seychelles -->
+                <div class="mb-20 grid md:grid-cols-2 gap-10">
+                    <!-- Carousel Seychelles -->
+                    <div class="relative w-full" data-carousel="slide" id="seychelles">
+                        <!-- Carousel wrapper -->
+                        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                             <!-- Item 1 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Seychelles (1)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Seychelles/Seychelles%20(1).jpg">
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Seychelles (2)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Seychelles/Seychelles%20(2).jpg">
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Seychelles (3)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Seychelles/Seychelles%20(3).jpg">
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                <img alt="Seychelles (4)" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" src="/images/Seychelles/Seychelles%20(4).jpg">
+                            </div>
+                        </div>
+                        <!-- Slider indicators -->
+                        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                            <button aria-current="true" aria-label="Slide 1" class="w-3 h-3 rounded-full" data-carousel-slide-to="0" type="button"></button>
+                            <button aria-current="false" aria-label="Slide 2" class="w-3 h-3 rounded-full" data-carousel-slide-to="1" type="button"></button>
+                            <button aria-current="false" aria-label="Slide 3" class="w-3 h-3 rounded-full" data-carousel-slide-to="2" type="button"></button>
+                            <button aria-current="false" aria-label="Slide 4" class="w-3 h-3 rounded-full" data-carousel-slide-to="3" type="button"></button>
+                        </div>
+                        <!-- Slider controls -->
+                        <button class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev type="button">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 1 1 5l4 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
+                                <span class="sr-only">Previous</span>
+                            </span>
+                        </button>
+                        <button class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next type="button">
+                            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                                <svg aria-hidden="true" class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" fill="none" viewBox="0 0 6 10" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m1 9 4-4-4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                </svg>
+                                <span class="sr-only">Next</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="flex flex-col text-center ">
+                        <p>Destination 2</p>
+                        <p class="text-2xl flex items-center justify-center grow">Autre destination disponible : Les seychelles</p>
                     </div>
                 </div>
                 
-                <!--Section Seychelles-->
-                <div class="mb-20 grid md:grid-cols-2 gap-10">
-                    <div class="flex flex-col text-center order-1 md:order-2">
-                        <p>Destination 2</p>
-                        <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une autre destination aux Seychelles</p>
+                <!--Voyage à Londres-->
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="md:order-2 text-center flex flex-col">
+                        <p>Destination 3</p>
+                        <p class="text-2xl flex items-center justify-center grow">Vous préférez un voyage plus orienté 
+                        culturel ? Alors, nous vous proposons aussi des séjours à Londres</p>
                     </div>
-                    <div class="carousel w-full">
-                        <div id="seychelles1" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(1).jpg" alt="Seychelles 1" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles8">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles2">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles2" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(2).jpg" alt="Seychelles 1" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles1">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles3">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles3" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(3).jpg" alt="Seychelles 1" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles2">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles4">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles4" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(4).jpg" alt="Seychelles 1" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles3">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles5">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles5" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(5).jpg" alt="Seychelles 1" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles4">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles6">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles6" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(6).jpg" alt="Seychelles 6" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles5">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles7">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles7" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(7).jpg" alt="Seychelles 7" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles6">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles8">❯</a>
-                            </div>
-                        </div>
-                        <div id="seychelles8" class="carousel-item relative w-full">
-                            <img src="/images/Seychelles/Seychelles%20(8).jpg" alt="Seychelles 8" class="w-full">
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles7">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles1">❯</a>
+                    <div class="md:order-1">
+                        <div class="carousel w-full">
+                            <div class="carousel-item relative w-full" id="londres1">
+                                <img src="/images/Londres/Londres%201.jpg" alt="Londres">
+                                <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❯</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -255,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetId = anchor.dataset.slide;
             const target = document.getElementById(targetId!);
 
-            target?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+            target?.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'})
         })
     })
 })

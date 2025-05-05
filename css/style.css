@@ -30,7 +30,7 @@ body {
     width: 100%;
     /* color: rgb(0, 0, 0); */
     color: white;
-    font-family: Montserrat, serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -59,6 +59,7 @@ body {
 
 /* Paramètre - .nav-links & li -  margin */
 .nav-links li {
+    margin-top: 80px;
     margin-left: 20px;
 }
 
@@ -66,6 +67,8 @@ body {
 .nav-links a {
     /* color: white; */
     color: rgb(255, 255, 255);
+    font-family: 'Montserrat', serif;
+    font-size: larger;
     font-weight: 900;
     text-decoration: none;
     padding: 5px 10px;
@@ -113,13 +116,12 @@ figcaption {
 .home img {
     margin-left: 16.5%;
     margin-top: 10%;
-
     display: flex;
     justify-content: center;
     opacity: 100%;
 }
 
-/* * crop image chat en cercle  */
+/* * crop image en cercle  */
 .logo {
     width: 50px;
     clip-path: circle(50% at 50% 50%)
@@ -127,12 +129,17 @@ figcaption {
 
 #home {
     color: black;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'liberation', serif; */
     font-weight: 900;
-    font-size: larger;
+    font-size: 36pt;
     display: flex;
     justify-self: left;
     margin-left: 0.5rem;
-    margin-block: 10px;
+}
+
+#home-logo {
+    margin-top: 6rem;
 }
 
 .reservation,
@@ -160,6 +167,17 @@ figcaption {
     /* Safari et Chrome */
 }
 
+.li-destination {
+    color: rgb(0, 255, 238);
+    display: inline-block;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.menu {
+    list-style: none;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -182,6 +200,54 @@ figcaption {
     }
 }
 
+/* * bordures blanches autour Témoignages*/
+.grid,
+.text-une {
+    border: 2px solid #fff
+}
+
+/* * padding background témoignages section */
+.une {
+    padding: 16px
+}
+
+/* * Témoignages */
+.text-une {
+    font-size: 1.875rem;
+    margin-bottom: 12px
+}
+
+/* * disposition éléments Témoignages */
+.tem1 {
+    border-radius: .5rem;
+    box-shadow: .5rem;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 4px
+}
+
+/* * disposition des initiales - témoignages */
+.entete {
+    height: 1.875rem;
+    background-size: 100;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: var(--green);
+    margin-right: 4px;
+    align-items: center;
+    border: 2px solid green;
+    width: 25%;
+    font-size: 1rem;
+    padding: .5rem
+}
+
+/* * commentaires témoignages */
+.une-comm-font {
+    color: gray;
+    font-style: italic
+}
 
 @media (max-width: 768px) {
 
@@ -244,161 +310,4 @@ figcaption {
 
     }
 
-}
-
-
-
-/* BackToTop */
-/*_________________flèche retour en haut____________________*/
-/*  flèche retour en haut  */
-.back-to-top {
-    /*  Basic styling  */
-    background-color: oklch(100% 0 0);
-    border: 2px solid currentColor;
-    border-radius: 0.5rem;
-    display: inline-block;
-    padding: 0.3rem;
-    /*  Hidden by default  */
-    position: fixed;
-    inset: auto 1rem 1rem auto;
-}
-
-/*  utiliser la couleur du texte  */
-.back-to-top:is(:link, :visited) {
-    color: currentColor;
-    text-decoration: none;
-}
-
-/*  masquer le texte retour en haut  */
-.back-to-top span {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
-.back-to-top {
-    --green: oklch(85.33% 0.15 141.46);
-}
-
-/*  animation progression de couleur la flèche  */
-@keyframes progress {
-    0% {
-        --progress: 0%;
-    }
-
-    100% {
-        --progress: 100%;
-    }
-}
-
-/*  animation de la flèche  */
-.back-to-top {
-    --green: oklch(85.33% 0.15 141.46);
-    animation: progress linear;
-    animation-timeline: scroll();
-}
-
-/*  rotation de la flèche  */
-.back-to-top svg {
-    transform: rotate(var(--angle));
-}
-
-/*  propriete de la progression de la fleche  */
-@property --progress {
-    syntax: '<percentage>';
-    inherits: false;
-    initial-value: 0%;
-}
-
-@property --angle {
-    syntax: '<angle>';
-    inherits: true;
-    initial-value: -90deg;
-}
-
-@keyframes progress {
-    0% {
-        --progress: 0%;
-        --angle: 90deg;
-    }
-
-    2% {
-        --angle: 90deg;
-
-    }
-
-    100% {
-        --progress: 100%;
-    }
-}
-
-@supports not (animation-timeline: scroll) {
-    .back-to-top {
-        background: var(--green);
-    }
-}
-
-@media(prefers-reduced-motion: no-preference) {
-    html {
-        scroll-behavior: smooth;
-    }
-}
-
-/* 
-.btn-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.btn {
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    font-family: Georgia;
-    color: #ffffff;
-    font-size: 16px;
-    background: #645f5f;
-    padding: 7px 10px 10px 10px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background: #153814;
-    text-decoration: none;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 10px;
-    font-family: arial;
-    font-size: 1em;
-    color: #FFFFFF;
-    background-color: #899F11;
-    border-radius: 24px;
-    -webkit-border-radius: 24px;
-    -moz-border-radius: 24px;
-    border: 4px solid #FFFFFF;
-    box-shadow: 3px 3px 12px #444444;
-    -webkit-box-shadow: 3px 3px 12px #444444;
-    -moz-box-shadow: 3px 3px 12px #444444;
-}
-
-.btn:hover {
-    padding: 10px;
-    box-shadow: 1px 1px 4px #777777;
-    -webkit-box-shadow: 1px 1px 4px #777777;
-    -moz-box-shadow: 1px 1px 4px #777777;
-} */
-
-@media screen and (width >=48rem) {
-    #home {
-        font-size: 3rem;
-        line-height: 1;
-    }
 }
