@@ -70,7 +70,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre compagnie Agence2Voyages.
             <br>
-            Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City.
+            <br>
+            Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.
             <br>
             Au choix
         </h1>
@@ -98,7 +99,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <h4 class="une-font">Paul Eluard</h4>
                             </div>
                         </div>
-                        <p class="une-comm-font">"Notre voyage au Tibet fut magique. Nous vous remercions." </p>
+                        <p class="une-comm-font">"Notre voyage au Tibet fut magique. Ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
                         <div class="stars">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -141,7 +142,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <h4 class="une-font">Jean Delafontaine</h4>
                             </div>
                         </div>
-                        <p class="une-comm-font">"Merci, Londres fut une expérience assez particulière, avec la reine
+                        <p class="une-comm-font">"Merci, Londres fut une expérience assez particulière, avec la rencontre de la reine
                             d'Angletrerre puis dans la foulée des bandes de jeunes et partout des taxis. Super voyage,
                             un peu court."</p>
                         <div class="stars">

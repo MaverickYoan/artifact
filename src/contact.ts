@@ -16,7 +16,7 @@ document.getElementById('app')!.innerHTML = `
         </ul>
     </nav>
 
-    <!-- * animation plane -->
+    <!-- * background -->
 
     <style>
         .home {

@@ -15,6 +15,10 @@
 <!-- * HEAD -->
 
 <head>
+
+    <!--CDN Flowbite-->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
     <!-- // - 2 - META -->
     <meta charset=utf-8>
     <meta content="IE=edge" http-equiv=X-UA-Compatible>
@@ -25,9 +29,11 @@
 
     <!-- // - 2 - LINK -->
     <link href="images/favicon.ico" rel="icon" type="image/x-icon">
-    <link href="css/output.css" rel=stylesheet>
+    <!--    <link href="css/output.css" rel=stylesheet>-->
     <!-- <link rel="stylesheet" href="font.css"> -->
-    <title>Agence2Voyages-Destinations</title><!-- TITRE -->
+    <title>Agence2Voyages</title><!-- TITRE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 
@@ -35,11 +41,117 @@
 
 <body>
     <div id="app"></div>
-    <script src="src/destination.ts" type="module"></script>
-    <script src="script/destination.js"></script>
+    <script type="module" src="src/destination.ts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
+<!--<body class="w-100 c-white ff-Montserrat, serif bg-white " id="content">-->
+<!--    &lt;!&ndash; id content / navbar / hamburger-menu / id hamburgerMenu / nav-links / id navLinks &ndash;&gt;-->
+<!--    <nav class="navbar">-->
+<!--        <div class="hamburger-menu" id="hamburgerMenu">-->
+<!--            <div class="bar"></div>-->
+<!--            <div class="bar"></div>-->
+<!--            <div class="bar"></div>-->
+<!--        </div>-->
+<!--        <ul class="nav-links" id="navLinks">-->
+<!--            <li><a href="#about">à propos</a></li>-->
+<!--            <li><a href="index.html">Home</a></li>-->
+<!--            <li><a href="#contact">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
 
-<!-- * FOOTER -->
+
+<!--    &lt;!&ndash; // Balises <br> si nous souhaitons tester le scroll &ndash;&gt;-->
+
+<!--    &lt;!&ndash; <br>-->
+<!--                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+<!--                &ndash;&gt;-->
+<!--    &lt;!&ndash; * Welcome section &ndash;&gt;-->
+
+<!--    <section class="tibet">&lt;!&ndash; tibet / h1 / id tibet / img &ndash;&gt;-->
+<!--        <img src="images\logo.png" width="50px" alt="voilier bleu">-->
+<!--        <h1 id="tibet">Agence2Voyages</h1>-->
+<!--    </section>-->
+
+<!--    <button class="flex items-center bg-blue-500 px-4 py-3 text-white hover:bg-blue-400"></button>-->
+
+<!--    &lt;!&ndash; // Destination section &ndash;&gt;-->
+
+<!--    &lt;!&ndash; * Tibet section &ndash;&gt;-->
+
+<!--    <section class="inline-flex flex-row items-center gap-6 p-7 md:flex-col rounded-2xl tibet">-->
+<!--        &lt;!&ndash; home / h1 / id welcome / aside / img &ndash;&gt;-->
+<!--        <h2>Tibet</h2>-->
+<!--        <h3>Nous pouvons par exemple proposer une destination au Tibet </h3>-->
+<!--        <figure>-->
+<!--            <img src="images\Tibet\Tibet 1.png" alt="">-->
+<!--            <figcaption class="flex gap-2 font-medium text-gray-600 dark:text-gray-400">-->
+<!--                <p>La meilleure période pour partir à la découverte du Tibet s'étend entre avril et-->
+<!--                    octobre : il fait en-->
+<!--                    effet-->
+<!--                    chaud, alors que l'hiver tibétain est quant à lui très rude.-->
+<!--                    Ses montagnes sacrées, ses anciens monastères-->
+<!--                    et ses profondes pratiques spirituelles font de ce lieu l'un des plus mystérieux et-->
+<!--                    inspirants de la-->
+<!--                    planète.</p>-->
+<!--                <p>860 € pour 6 jours</p>-->
+<!--            </figcaption>-->
+<!--        </figure>-->
+<!--    </section>-->
+
+
+<!--    &lt;!&ndash; * Seychelles section &ndash;&gt;-->
+
+<!--    <section class="flex flex-row items-center gap-6 p-7 md:flex-col rounded-2xl ">-->
+<!--        &lt;!&ndash; home / h1 / id welcome / aside / img &ndash;&gt;-->
+<!--        <h2 id="seychelles">Seychelles</h2>-->
+<!--        <h3>Nous pouvons par exemple proposer une destination au Seychelles </h3>-->
+<!--        <figure class="flex gap-2 font-medium text-gray-600 dark:text-gray-400">-->
+<!--            <img src="images/Seychelles/Seychelles%201.png" alt="" class="w-full h-full object-cover">-->
+<!--            <figcaption>-->
+<!--                <p>Période de voyage recommandée : mai à octobre, haute saison de juin à juillet. Activités-->
+<!--                    : la-->
+<!--                    saison-->
+<!--                    sèche-->
+<!--                    est recommandée pour la plupart des activités, (voile, randonnée, surf), mais pour la-->
+<!--                    plongée, les-->
+<!--                    mois de-->
+<!--                    mars à mai et de septembre à novembre sont recommandés.</p>-->
+<!--                <p>1800 € pour 6 jours</p>-->
+<!--            </figcaption>-->
+<!--        </figure>-->
+
+<!--    </section>-->
+
+
+<!--    &lt;!&ndash; * FOOTER &ndash;&gt;-->
+
+<!--    <footer inline-flex flex-row items-center>&lt;!&ndash; * droits / h6 &ndash;&gt;-->
+<!--        <div class="text-sm/2 gap-3 p-2 md:flex-auto  droits">-->
+<!--            <h6 class="text-sm/2 gap-4 p-2 md:flex-auto  ">&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro-->
+<!--                <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>-->
+<!--            </h6>-->
+<!--            &lt;!&ndash; <a class="agrees" href="" target="_blank"> &ndash;&gt;-->
+<!--            &lt;!&ndash; </a> &ndash;&gt;-->
+<!--        </div>-->
+
+<!--    </footer>-->
+
+
+<!--    &lt;!&ndash; * a / p / svg &ndash;&gt;-->
+
+<!--    <a href="#content" class="back-to-top">&lt;!&ndash;  back-to-top &ndash;&gt;-->
+<!--        <p> </p>-->
+<!--        &lt;!&ndash; aria-hidden="true" pour masquer l'icon de l'écran &ndash;&gt;-->
+<!--        <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">-->
+<!--            <path d="M5 12h14" />-->
+<!--            <path d="m12 4 7 7-7 7" />-->
+<!--        </svg>-->
+<!--    </a>-->
+
+<!--    <script src="script\script.js"></script>&lt;!&ndash; * - 2 - Script Section : activer le menu mobile &ndash;&gt;-->
+
+<!--</body>-->
 
 </html>
