@@ -101,11 +101,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                         </div>
                         <p class="une-comm-font">"Notre voyage au Tibet fut magique. Ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
                         <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                         </div>
 
                     </div>
@@ -124,11 +119,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             magnifique plage des Seychelles nous a tout fait oublié. Nous y retournerons."
                         </p>
                         <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                         </div>
                     </div>
                 </div>
@@ -146,11 +136,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             d'Angletrerre puis dans la foulée des bandes de jeunes et partout des taxis. Super voyage,
                             un peu court."</p>
                         <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                         </div>
                     </div>
                 </div>
