@@ -15,7 +15,7 @@ document.getElementById("app")!.innerHTML = `
             </nav>
         
             <!--Menu burger-->
-            <button class="md:hidden absolute top-10 right-10" id="burgerCross">
+            <button class="md:hidden absolute top-10 right-10" id="burger">
                 <svg class="fill-white w-15 h-15" id="fi_5358649"
                      viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
@@ -318,14 +318,14 @@ document.getElementById("app")!.innerHTML = `
 `
 
 document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById("burgerCross") as HTMLButtonElement;
+    const burgerCross = document.getElementById("burger") as HTMLButtonElement;
 
     const phoneMenu = document.getElementById("phone-menu") as HTMLDivElement;
 
     const cross = document.getElementById("close") as HTMLButtonElement;
 
     // Bouton pour ouvrir le menu
-    burger.addEventListener("click", () => {
+    burgerCross.addEventListener("click", () => {
         phoneMenu.classList.remove("hidden");
     })
 
