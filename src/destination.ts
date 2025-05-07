@@ -238,22 +238,22 @@ document.getElementById("app")!.innerHTML = `
                         culturel ? Alors, nous vous proposons aussi des séjours à Londres</p>
                     </div>
                     <div class="md:order-1">
-                        <div class="carousel w-full">
+                        <div class="carousel w-full h-96">
                             <div class="carousel-item relative w-full group" id="londres1">
-                                <figure class="relative">
-                                    <img src="/images/Londres/Londres%201.jpg" class="w-ful h-full object-cover"
+                                <figure class="relative w-full">
+                                    <img src="/images/Londres/Londres%201.jpg" class="w-full h-full object-cover"
                                  alt="Londres">
                                     <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         London city vue du ciel
                                     </figcaption>
                                 </figure>
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres3">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres5">❮</a>
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❯</a>
                                 </div>
                             </div>
                             <div class="carousel-item relative w-full group" id="londres2">
-                                <figure class="relative">
+                                <figure class="relative w-full">
                                     <img src="/images/Londres/221b%20Baker%20Street.jpg" class="w-full h-full object-cover" alt="Baker Street">
                                     <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Même Sherlock Holmes a droit à sa propre adresse
@@ -265,7 +265,7 @@ document.getElementById("app")!.innerHTML = `
                                 </div>
                             </div>
                             <div class="carousel-item relative w-full group" id="londres3">
-                                <figure class="relative">
+                                <figure class="relative w-full">
                                     <img src="/images/Londres/Tower%20bridge.jpg" class="w-full h-full object-cover" alt="Tower bridge">
                                     <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 text-white md:opacity-0 group-hover:opacity-100 duration-300">
                                         Le Tower Bridge dans toute sa splendeur
@@ -273,6 +273,30 @@ document.getElementById("app")!.innerHTML = `
                                 </figure>
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres4">❯</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item relative w-full group" id="londres4">
+                                <figure class="relative w-full">
+                                    <img src="/images/Londres/bus%20anglais.jpg" class="w-full h-full object-cover" alt="Bus anglais">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 text-white md:opacity-0 group-hover:opacity-100 duration-300">
+                                        N'avez-vous jamais rêvé de voyager dans un bus anglais ?
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres3">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres5">❯</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item relative w-full group" id="londres5">
+                                <figure class="relative w-full">
+                                    <img src="/images/Londres/London%20Eye.jpg" class="w-full h-full object-cover" alt="London eye">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 text-white md:opacity-0 group-hover:opacity-100 duration-300">
+                                        Vous voulez avoir une vue sur toute la ville de Londres ? Alors montez sur "London eye
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres4">❮</a>
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❯</a>
                                 </div>
                             </div>
