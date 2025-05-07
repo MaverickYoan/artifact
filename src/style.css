@@ -1,21 +1,8 @@
 @import "tailwindcss";
-@import "swiper/css";
 @plugin "daisyui";
 
 @layer base {
-    h1 {
-        @apply text-5xl font-semibold py-5;
-    }
-}
-
-@theme {
-    --font-montserrat: "Montserrat", sans-serif;
-}
-
-@font-face {
-    font-family: 'Montserrat', sans-serif;
-    src:
-        url("../Polices/Montserrat-Italic-VariableFont_wght.ttf"),
-        url("../Polices/Montserrat-Regular.ttf"),
-        url("../Polices/Montserrat-VariableFont_wght.ttf")
+  h1 {
+    @apply text-5xl font-semibold py-5;
+  }
 }
