@@ -28,16 +28,12 @@ document.getElementById("app")!.innerHTML = `
             </button>
         
             <!--Menu mobile-->
-            <nav class="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black hidden z-50" id="phone-menu">
+            <nav class="md:hidden flex-col items-center justify-center fixed top-0 left-0 right-0 bottom-0 bg-black hidden z-50" id="phone-menu">
                 <button class="absolute right-10 top-10" id="close">
                     <img alt="Cross Icon" class="w-15" src="/images/cross.svg"/>
                 </button>
-                <summary>
-                <a href="../index.html">Welcome</a>
-                <a href="#destinations">Destinations</a>
-                <a href="../contact.html">Contact</a>
-                </summary>
-
+                <a href="/index.html">Accueil</a>
+                <a href="#destinations" id="destinations-mobile">Destinations</a>
             </nav>
         </header>
         <main class="container mx-auto grow">
@@ -45,10 +41,10 @@ document.getElementById("app")!.innerHTML = `
                 <div class="grid md:grid-cols-2 gap-10 justify-between pb-20">
                     <div class="order-2 md:order-1">
                         <div class="carousel w-full">
-                            <div class="carousel-item relative w-full" id="slide1">
+                            <div class="carousel-item relative w-full group" id="slide1">
                                 <figure class="relative w-full">
                                     <img alt="Tibet" class="w-full" src="/images/Tibet/Tibet%20(1).jpg">
-                                    <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-2 md:p-5">
+                                    <figcaption class="absolute bottom-5 bg-black/75 left-5 right-5 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Diapo 1
                                     </figcaption>
                                 </figure>
@@ -57,10 +53,10 @@ document.getElementById("app")!.innerHTML = `
                                     <a class="btn btn-circle carousel-nav" data-slide="slide2" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide2">
+                            <div class="carousel-item relative w-full group" id="slide2">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 2" class="w-full" src="/images/Tibet/Tibet%20(2).jpg"/>
-                                    <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-2 md:p-5">
+                                    <figcaption class="absolute bottom-5 bg-black/75 left-5 right-3 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Diapo 2
                                     </figcaption>
                                 </figure>
@@ -69,10 +65,10 @@ document.getElementById("app")!.innerHTML = `
                                     <a class="btn btn-circle carousel-nav" data-slide="slide3" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide3">
+                            <div class="carousel-item relative w-full group" id="slide3">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 3" class="w-full" src="/images/Tibet/Tibet%20(3).jpg">
-                                    <figcaption class="absolute bg-black/75 p-2 md:p-5 bottom-0 left-0 right-0">
+                                    <figcaption class="absolute bg-black/75 p-2 md:p-5 bottom-5 left-5 right-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Diapo 3
                                     </figcaption>
                                 </figure>
@@ -81,20 +77,20 @@ document.getElementById("app")!.innerHTML = `
                                     <a class="btn btn-circle carousel-nav" data-slide="slide4" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide4">
+                            <div class="carousel-item relative w-full group" id="slide4">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 4" class="w-full" src="/images/Tibet/Tibet%20(4).jpg">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 p-2 md:p-5 bg-black/75">Diapo 4</figcaption>
+                                    <figcaption class="absolute bottom-5 left-5 right-5 p-2 md:p-5 bg-black/75 md:opacity-0 group-hover:opacity-100 duration-300">Diapo 4</figcaption>
                                 </figure>
                                 <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                                     <a class="btn btn-circle carousel-nav" data-slide="slide3" href="#">❮</a>
                                     <a class="btn btn-circle carousel-nav" data-slide="slide5" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide5">
+                            <div class="carousel-item relative w-full group" id="slide5">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 5" class="w-full" src="/images/Tibet/Tibet%20(5).jpg">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 p-2 md:p-5 bg-black/75">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300 bg-gray-500/75">
                                         Diapo 5
                                     </figcaption>
                                 </figure>
@@ -103,10 +99,10 @@ document.getElementById("app")!.innerHTML = `
                                     <a class="btn btn-circle carousel-nav" data-slide="slide6" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide6">
+                            <div class="carousel-item relative w-full group" id="slide6">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 6" class="w-full" src="/images/Tibet/Tibet%20(6).jpg">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Diapo 6
                                     </figcaption>
                                 </figure>
@@ -115,10 +111,10 @@ document.getElementById("app")!.innerHTML = `
                                     <a class="btn btn-circle carousel-nav" data-slide="slide7" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide7">
+                            <div class="carousel-item relative w-full group" id="slide7">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 7" class="w-full" src="/images/Tibet/Tibet%20(7).jpg">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Diapo 7
                                     </figcaption>
                                 </figure>
@@ -127,10 +123,10 @@ document.getElementById("app")!.innerHTML = `
                                     <a class="btn btn-circle carousel-nav" data-slide="slide8" href="#">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="slide8">
+                            <div class="carousel-item relative w-full group" id="slide8">
                                 <figure class="relative w-full">
                                     <img alt="Tibet 8" class="w-full" src="/images/Tibet/Tibet%20(8).jpg">
-                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-gray-500/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
                                         Diapo 8
                                     </figcaption>
                                 </figure>
@@ -298,7 +294,7 @@ document.getElementById("app")!.innerHTML = `
                                 <figure class="relative w-full">
                                     <img src="/images/Londres/London%20Eye.jpg" class="w-full h-full object-cover" alt="London eye">
                                     <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 text-white md:opacity-0 group-hover:opacity-100 duration-300">
-                                        Vous voulez avoir une vue sur toute la ville de Londres ? Alors montez sur "London eye"
+                                        Vous voulez avoir une vue sur toute la ville de Londres ? Alors montez sur "London eye
                                     </figcaption>
                                 </figure>
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
@@ -324,21 +320,29 @@ document.getElementById("app")!.innerHTML = `
 `
 
 document.addEventListener("DOMContentLoaded", function () {
-    const burgerCross = document.getElementById("burger") as HTMLButtonElement;
+    const burger = document.getElementById("burger") as HTMLButtonElement;
 
     const phoneMenu = document.getElementById("phone-menu") as HTMLDivElement;
 
     const cross = document.getElementById("close") as HTMLButtonElement;
 
+    const destinationsMobile = document.getElementById("destinations-mobile") as HTMLAnchorElement;
+
     // Bouton pour ouvrir le menu
-    burgerCross.addEventListener("click", () => {
+    burger.addEventListener("click", () => {
         phoneMenu.classList.remove("hidden");
+        phoneMenu.classList.add("flex")
     })
 
     // Bouton pour fermer le menu
-    cross.addEventListener("click", () => {
+    cross.addEventListener("click", closeMenu)
+
+    destinationsMobile.addEventListener("click", closeMenu)
+
+    function closeMenu() {
         phoneMenu.classList.add("hidden")
-    })
+        phoneMenu.classList.remove("flex")
+    }
 
     document.querySelectorAll(".carousel-nav").forEach((link) => {
         link.addEventListener("click", (event) => {
