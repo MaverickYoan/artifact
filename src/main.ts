@@ -155,18 +155,3 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <script src="../script/script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
 `
-document.addEventListener('DOMContentLoaded', () => {
-
-    const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
-    const links = document.getElementById('navLinks') as HTMLUListElement
-    burger.addEventListener('click', function () {
-        this.classList.toggle('active');
-        links.classList.toggle('active');
-    });
-
-    const top = document.querySelector('.back-to-top') as HTMLButtonElement;
-
-    top.addEventListener("click", function () {
-        window.scrollTo(0, 0);
-    });
-});
