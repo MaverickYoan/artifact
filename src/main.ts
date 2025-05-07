@@ -63,7 +63,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <!-- * fond d'écran -->
 
     <div class="sky">
-        <img src="images/plane.png">
+        <img src="images/plane.png" alt="Image d'un avion de ligne">
     </div>
 
     <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
@@ -72,6 +72,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <br>
             <br>
             Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.
+            <br>
             <br>
             Au choix
         </h1>

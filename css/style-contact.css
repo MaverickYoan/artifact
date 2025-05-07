@@ -159,14 +159,6 @@ figcaption {
     mix-blend-mode: difference;
 }
 
-/* * - FADE IN */
-.slogan {
-
-    animation: fadein 10s;
-    -webkit-animation: fadein 10s;
-    /* Safari et Chrome */
-}
-
 @keyframes fadein {
     from {
         opacity: 0;

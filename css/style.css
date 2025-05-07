@@ -160,10 +160,10 @@ figcaption {
 }
 
 /* * - FADE IN */
-.slogan {
-
-    animation: fadein 10s;
+#slogan,
+.li-destination {
     -webkit-animation: fadein 10s;
+    animation: fadein 10s;
     /* Safari et Chrome */
 }
 
