@@ -156,7 +156,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 document.addEventListener('DOMContentLoaded', () => {
 
     const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
-    const links = document.getElementById('navLinks') as HTMLUListElement;
+    const links = document.getElementById('navLinks') as HTMLUListElement
     burger.addEventListener('click', function () {
         this.classList.toggle('active');
         links.classList.toggle('active');

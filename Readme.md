@@ -5,6 +5,11 @@ Travail en binôme
 Objectif : Concevoir et développer un pour une agence de voyage fictive, avec une page d’accueil et une page destination
 
 ---
+Légende : 
+
+ok = <img src="images/Green_check.svg.png" width= 15px;/> <br>
+standBy = <img src="images/Orange_x.svg" width= 15px;/> <br>
+nok = <img src="images/Red_x.svg" width= 15px;/>
 
 🎯 Objectifs pédagogiques
 Maîtriser la structure HTML sémantique et les bases du CSS
@@ -14,7 +19,7 @@ Concevoir une maquette fonctionnelle sur Figma avant le développement
 Respecter des principes d’accessibilité et de responsive design
 
 🗂️ Structure du site
-Le site doit contenir au minimum deux pages :
+Le site doit contenir au minimum deux pages : <img src="images/Green_check.svg.png" width= 15px/>
 
 Page d’accueil (index.html)
 *Page de destination
