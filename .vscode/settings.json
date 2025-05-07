@@ -1,0 +1,9 @@
+{
+    "files.autoSave": "onFocusChange",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveServer.settings.ChromeDebuggingAttachment": false,
+    "liveServer.settings.host": "127.0.0.1/",
+    "liveServer.settings.mount": [],
+    "liveServer.settings.useLocalIp": false,
+    "liveServer.settings.port": 5173
+}
