@@ -20,7 +20,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <!-- * home section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">Agence2Voyages</h1>
+        <h1 id="home">GlobeTrotters<</h1>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
     </section>
 
@@ -68,7 +68,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
 
-    <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre compagnie Agence2Voyages.
+    <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre agence GlobeTrotters.
             <br>
             <br>
             Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.

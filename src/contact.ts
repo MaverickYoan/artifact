@@ -31,7 +31,7 @@ document.getElementById('app')!.innerHTML = `
     <!-- * Contact section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">Agence2Voyages</h1>
+        <h1 id="home">GlobeTrotters</h1>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
     <section id="contact" class="py-16 bg-white">
         <div class="container mx-auto px-4">
@@ -62,7 +62,7 @@ document.getElementById('app')!.innerHTML = `
                             <div>
                                 <h4 class="font-medium text-gray-800">Email</h4>
                                 <p class="text-gray-600"><a class="email-contact"
-                                        href="mailto:contact@Agence2Voyages.fr">contact@Agence2Voyages.fr</a>
+                                        href="mailto:contact@globetrottersbeTrotters.fr">contact@globetrotters.fr</a>
                                 </p>
                             </div>
                         </div>
