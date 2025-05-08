@@ -142,6 +142,15 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 </div>
             </div>
 
+    <!-- Ta section ou image -->
+    <section>
+    <div class="fade-in">
+
+<img class="fade-in" src="images/globeTrotters_AllInOne1.png" alt="">
+
+    </div>
+    </section>
+
     <!-- * FOOTER -->
 
     <footer><!-- * droits / h6 -->

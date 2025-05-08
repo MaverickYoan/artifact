@@ -132,6 +132,10 @@ figcaption {
     opacity: 100%;
 }
 
+.fade-in img {
+    width: 100%
+}
+
 /* * crop image chat en cercle  */
 .logo {
     width: 50px;
@@ -154,7 +158,6 @@ figcaption {
 
 
 .reservation,
-.contact,
 .droits {
     display: flex;
     justify-self: center;
@@ -191,6 +194,15 @@ figcaption {
         opacity: 1;
     }
 }
+
+/* 
+.carousel img {
+    transition: transform 0.5s cubic-bezier(.4, 2, .6, 1);
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+} */
 
 .email-contact {
     color: rgb(255, 170, 0);
@@ -255,6 +267,10 @@ figcaption {
         justify-content: center;
         opacity: 0%;
 
+    }
+
+    .fade-in img {
+        width: 100%
     }
 
 }

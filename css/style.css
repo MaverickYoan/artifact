@@ -29,6 +29,10 @@
     transform: translateY(0);
 }
 
+.fade-in img {
+    width: 100%
+}
+
 /* créer des outlines sur tous les éléments de la page (permet un debuggage rapide)
 * {
     border: 1px solid blue;
@@ -169,9 +173,22 @@ figcaption {
     mix-blend-mode: difference;
 }
 
-/* * - FADE IN */
+.dropdown {
+    border: 0.5px solid #0295AB;
+    font-size: large;
+}
+
 #slogan,
 .li-destination {
+    display: flex;
+    justify-self: center;
+    font-size: large;
+}
+
+/* * - FADE IN */
+#slogan,
+.li-destination,
+img {
     -webkit-animation: fadein 10s;
     animation: fadein 10s;
     /* Safari et Chrome */
@@ -179,6 +196,7 @@ figcaption {
 
 .li-destination {
     color: rgb(0, 255, 238);
+    font-size: x-large;
     display: inline-block;
     justify-content: start;
     gap: 1rem;
@@ -213,7 +231,7 @@ figcaption {
 /* * bordures blanches autour Témoignages*/
 .grid,
 .text-une {
-    border: 2px solid #fff
+    border: 2px solid #fff;
 }
 
 /* * padding background témoignages section */
@@ -224,7 +242,7 @@ figcaption {
 /* * Témoignages */
 .text-une {
     font-size: 1.875rem;
-    margin-bottom: 12px
+    margin-bottom: 12px;
 }
 
 /* * disposition éléments Témoignages */
@@ -234,7 +252,7 @@ figcaption {
     padding: 6px;
     display: inline-flex;
     align-items: center;
-    margin-bottom: 4px
+    margin-bottom: 4px;
 }
 
 /* * disposition des initiales - témoignages */
@@ -250,7 +268,7 @@ figcaption {
     border: 2px solid green;
     width: 25%;
     font-size: 1rem;
-    padding: .5rem
+    padding: .5rem;
 }
 
 /* * commentaires témoignages */
@@ -318,6 +336,10 @@ figcaption {
         justify-content: center;
         opacity: 0%;
 
+    }
+
+    .fade-in img {
+        width: 100%
     }
 
 }
