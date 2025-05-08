@@ -18,6 +18,16 @@
     padding: 0;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /* créer des outlines sur tous les éléments de la page (permet un debuggage rapide)
 * {

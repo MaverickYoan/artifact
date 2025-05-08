@@ -20,7 +20,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <!-- * home section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">GlobeTrotters<</h1>
+        <h1 id="home">GlobeTrotters</h1>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
     </section>
 

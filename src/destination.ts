@@ -3,7 +3,7 @@ import "./style.css"
 document.getElementById("app")!.innerHTML = `
     <div class="min-h-screen bg-black text-white font-montserrat flex flex-col">
         <header class="container mx-auto relative flex md:grid grid-cols-3 justify-between items-center pt-10 md:p-0">
-            <h1 class="hidden md:block">Agence2Voyage</h1>
+            <h1 class="hidden md:block">GlobeTrotters</h1>
             <img alt="Logo" class="w-12.5 mx-auto rounded-full"
                  src="/images/logo.png">
         
@@ -32,6 +32,12 @@ document.getElementById("app")!.innerHTML = `
                 <button class="absolute right-10 top-10" id="close">
                     <img alt="Cross Icon" class="w-15" src="/images/cross.svg"/>
                 </button>
+                <summary>
+                <a href="../index.html">Welcome</a>
+                <a href="#destinations">Destinations</a>
+                <a href="../contact.html">Contact</a>
+                </summary>
+
             </nav>
         </header>
         <main class="container mx-auto grow">
