@@ -11,16 +11,14 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul class="nav-links" id="navLinks">
             <li><a href="/index.html">À propos</a></li>
             <li><a href="/destination.html">Destination</a></li>
-            <!--  // - à voir comment tu veux que l'on fasse pour les réservation Florian. -->
-            <!-- <li><a href="#reservation">Réservation</a></li> -->
             <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
-
+    
     <!-- * home section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">Agence2Voyages</h1>
+        <h1 id="home">GlobeTrotters</h1>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
     </section>
 
@@ -63,15 +61,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <!-- * fond d'écran -->
 
     <div class="sky">
-        <img src="images/plane.png">
+        <img src="images/plane.png" alt="Image d'un avion de ligne">
     </div>
 
     <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
 
-    <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre compagnie Agence2Voyages.
+    <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre agence GlobeTrotters.
             <br>
             <br>
             Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.
+            <br>
             <br>
             Au choix
         </h1>
@@ -99,13 +98,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <h4 class="une-font">Paul Eluard</h4>
                             </div>
                         </div>
-                        <p class="une-comm-font">"Notre voyage au Tibet fut magique. Ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
+                        <p class="une-comm-font">"Notre voyage au Tibet fut magique avec ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
                         <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                         </div>
 
                     </div>
@@ -124,11 +118,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                             magnifique plage des Seychelles nous a tout fait oublié. Nous y retournerons."
                         </p>
                         <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                         </div>
                     </div>
                 </div>
@@ -142,46 +131,39 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <h4 class="une-font">Jean Delafontaine</h4>
                             </div>
                         </div>
-                        <p class="une-comm-font">"Merci, Londres fut une expérience assez particulière, avec la rencontre de la reine
-                            d'Angletrerre puis dans la foulée des bandes de jeunes et partout des taxis. Super voyage,
-                            un peu court."</p>
+                        <p class="une-comm-font">"Merci, Londres fut une expérience assez surprenante, avec la rencontre de la reine
+                            d'Angletrerre. Super voyage, un peu court."</p>
                         <div class="stars">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
                         </div>
                     </div>
                 </div>
             </div>
 
+    <!-- Section fade-in -->
+    <section>
+    <div class="fade-in">
+<img class="fade-in" src="images/globeTrotters_AllInOne1.png" alt="">
+    </div>
+    </section>
+
     <!-- * FOOTER -->
 
     <footer><!-- * droits / h6 -->
         <div class="droits">
-            <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
+            <h6>&copy; 2025 Projet_3. Les images furent générées grâce à l'IA ChatGPT. @onlineformapro
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
         </div>
 
     </footer>
-
-
-    <script src="../script/script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
 `
+// * script mobile menu
 document.addEventListener('DOMContentLoaded', () => {
 
     const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
-    const links = document.getElementById('navLinks') as HTMLUListElement
+    const links = document.getElementById('navLinks') as HTMLUListElement;
     burger.addEventListener('click', function () {
         this.classList.toggle('active');
         links.classList.toggle('active');
-    });
-
-    const top = document.querySelector('.back-to-top') as HTMLButtonElement;
-
-    top.addEventListener("click", function () {
-        window.scrollTo(0, 0);
     });
 });

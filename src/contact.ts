@@ -2,8 +2,6 @@ import '../css/style-contact.css'
 
 document.getElementById('app')!.innerHTML = `
     <nav class="navbar bg-[url('images/Tibet/Tibet (8).jpg')]">
-        <!-- <button class="btntest">bouton</button> -->
-
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -20,20 +18,31 @@ document.getElementById('app')!.innerHTML = `
 
     <style>
         .home {
-            background: url("/images/Tibet/Tibet (7).jpg");
+            background: url("images/globeTrotters_AllInOne0.png");
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
         }
     </style>
 
-
-    <!-- * Contact section -->
-
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">Agence2Voyages</h1>
+        <h1 id="home">GlobeTrotters</h1>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
-    <section id="contact" class="py-16 bg-white">
+        </section>
+
+
+        <br>
+        <br>
+        <form action="welcome.php" method="post">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+        </form>
+        
+<!-- Contact Section -->
+    <br>
+    <div>
+<section id="contact" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold flex items-start mb-12 text-gray-800">Contactez-nous</h2>
             <div class="flex flex-col md:flex-row">
@@ -51,8 +60,7 @@ document.getElementById('app')!.innerHTML = `
                                 <i class="fas fa-phone text-green-600"></i>
                             </div>
                             <div>
-                                <h4 class="font-larger text-black-900">Téléphone</h4>
-                                <p class="text-black-900">01 23 45 67 89</p>
+                                <h4 class="font-larger text-black-900">Téléphone : 06 58 45 67 89</h4>
                             </div>
                         </div>
                         <div class="flex items-start">
@@ -62,7 +70,7 @@ document.getElementById('app')!.innerHTML = `
                             <div>
                                 <h4 class="font-medium text-gray-800">Email</h4>
                                 <p class="text-gray-600"><a class="email-contact"
-                                        href="mailto:contact@Agence2Voyages.fr">contact@Agence2Voyages.fr</a>
+                                        href="mailto:contact@globetrottersbeTrotters.fr">contact@globetrotters.fr</a>
                                 </p>
                             </div>
                         </div>
@@ -80,15 +88,25 @@ document.getElementById('app')!.innerHTML = `
             </div>
         </div>
     </section>
+        </div>  
+    <br>
+    <br>
+    <br>
+    <!-- Ta section ou image -->
+    <section>
+    <div class="fade-in">
+
+<img class="fade-in" src="images/globeTrotters_AllInOne2.png" alt="">
+
+    </div>
     </section>
-<!-- Contact Section -->
-    
+
 
     <!-- * FOOTER -->
 
     <footer><!-- * droits / h6 -->
         <div class="droits">
-            <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
+            <h6>&copy; 2025 Projet_3. Tous droits réservés. Les images furent générées grâce à l'IA ChatGPT. @onlineformapro
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
             <a class="agrees" href="" target="_blank">
@@ -102,15 +120,9 @@ document.getElementById('app')!.innerHTML = `
 document.addEventListener('DOMContentLoaded', () => {
 
     const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
-    const links = document.getElementById('navLinks') as HTMLUListElement
+    const links = document.getElementById('navLinks') as HTMLUListElement;
     burger.addEventListener('click', function () {
         this.classList.toggle('active');
         links.classList.toggle('active');
-    });
-
-    const top = document.querySelector('.back-to-top') as HTMLButtonElement;
-
-    top.addEventListener("click", function () {
-        window.scrollTo(0, 0);
     });
 });

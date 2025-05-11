@@ -18,7 +18,6 @@
     padding: 0;
 }
 
-
 /* créer des outlines sur tous les éléments de la page (permet un debuggage rapide)
 * {
     border: 1px solid blue;
@@ -98,14 +97,6 @@ figcaption {
     margin: 1rem;
 }
 
-/* .hamburger-menu {
-    display: none;
-}
-
-.btntest:focus .hamburger-menu {
-    display: flex;
-} */
-
 .home {
     min-height: 100vh;
 }
@@ -119,7 +110,7 @@ figcaption {
     opacity: 100%;
 }
 
-/* * crop image chat en cercle  */
+/* * crop image en cercle  */
 .logo {
     width: 50px;
     clip-path: circle(50% at 50% 50%)
