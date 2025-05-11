@@ -1,4 +1,5 @@
-import '../css/style-contact.css'
+import '../css/style-contact.css';
+import './style.css';
 
 document.getElementById('app')!.innerHTML = `
     <nav class="navbar bg-[url('images/Tibet/Tibet (8).jpg')]">
@@ -18,7 +19,7 @@ document.getElementById('app')!.innerHTML = `
 
     <style>
         .home {
-            background: url("images/globeTrotters_AllInOne0.png");
+            background: url("/images/globeTrotters_AllInOne0.png");
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
@@ -96,7 +97,7 @@ document.getElementById('app')!.innerHTML = `
     <section>
     <div class="fade-in">
 
-<img class="fade-in" src="images/globeTrotters_AllInOne2.png" alt="">
+<img class="fade-in" src="../images/GlobeTrotters_AllInOne2.png" alt="">
 
     </div>
     </section>

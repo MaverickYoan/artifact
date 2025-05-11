@@ -18,6 +18,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .hero-image {
     position: relative;
 }
@@ -135,8 +139,8 @@ figcaption {
 }
 
 #home {
-    color: black;
-    font-family: 'liberation serif';
+    color: white;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 36pt;
     display: flex;
@@ -244,14 +248,14 @@ figcaption {
     }
 
     figcaption {
-        margin: 0rem;
+        margin: 0;
     }
 
     .home img {
         margin-left: 5%;
         display: flex;
         justify-content: center;
-        opacity: 0%;
+        opacity: 0;
 
     }
 
