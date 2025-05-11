@@ -54,29 +54,27 @@ body {
 
 /* Paramètre - .navbar */
 .navbar {
+    background: rgba(0, 0, 0, 0.70);
     position: fixed;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #000000; */
-    background-color: transparent;
-    padding: 10px 20px;
+    /*background-color: #000000; */
+    /*background-color: transparent;*/
+    /*padding: 10px 20px;*/
+    right: 0;
 }
 
 /* Paramètre - .nav-links */
 .nav-links {
     list-style: none;
     display: flex;
+    gap: 10px;
     margin: 0;
     padding: 0;
 }
 
 /* Paramètre - .nav-links & li -  margin */
-.nav-links li {
-    margin-top: 80px;
-    margin-left: 20px;
-}
 
 /* Paramètre - .nav-links & a -  margin */
 .nav-links a {
@@ -85,7 +83,7 @@ body {
     font-size: larger;
     font-weight: 900;
     text-decoration: none;
-    padding: 5px 10px;
+    /*padding: 5px 10px;*/
 }
 
 .nav-links {
@@ -163,11 +161,6 @@ figcaption {
     color: rgb(0, 0, 0);
 }
 
-.navbar,
-.nav-links {
-    mix-blend-mode: difference;
-}
-
 @keyframes fadein {
     from {
         opacity: 0;
@@ -178,9 +171,9 @@ figcaption {
     }
 }
 
-.container {
-    margin-left: 10rem;
-}
+/*.container {*/
+/*    margin-left: 10rem;*/
+/*}*/
 
 @-webkit-keyframes fadein {
 
