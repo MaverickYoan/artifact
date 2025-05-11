@@ -2,8 +2,6 @@ import '../css/style-contact.css'
 
 document.getElementById('app')!.innerHTML = `
     <nav class="navbar bg-[url('images/Tibet/Tibet (8).jpg')]">
-        <!-- <button class="btntest">bouton</button> -->
-
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -33,9 +31,15 @@ document.getElementById('app')!.innerHTML = `
         </section>
 
 
+        <br>
+        <br>
+        <form action="welcome.php" method="post">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+        </form>
+        
 <!-- Contact Section -->
-    <br>
-    <br>
     <br>
     <div>
 <section id="contact" class="py-16 bg-white">
@@ -96,7 +100,7 @@ document.getElementById('app')!.innerHTML = `
 
     </div>
     </section>
- 
+
 
     <!-- * FOOTER -->
 

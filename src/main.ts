@@ -11,12 +11,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul class="nav-links" id="navLinks">
             <li><a href="/index.html">À propos</a></li>
             <li><a href="/destination.html">Destination</a></li>
-            <!--  // - à voir comment tu veux que l'on fasse pour les réservation Florian. -->
-            <!-- <li><a href="#reservation">Réservation</a></li> -->
             <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
-
+    
     <!-- * home section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
@@ -100,7 +98,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <h4 class="une-font">Paul Eluard</h4>
                             </div>
                         </div>
-                        <p class="une-comm-font">"Notre voyage au Tibet fut magique. Ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
+                        <p class="une-comm-font">"Notre voyage au Tibet fut magique avec ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
                         <div class="stars">
                         </div>
 
@@ -133,21 +131,18 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                                 <h4 class="une-font">Jean Delafontaine</h4>
                             </div>
                         </div>
-                        <p class="une-comm-font">"Merci, Londres fut une expérience assez particulière, avec la rencontre de la reine
-                            d'Angletrerre puis dans la foulée des bandes de jeunes et partout des taxis. Super voyage,
-                            un peu court."</p>
+                        <p class="une-comm-font">"Merci, Londres fut une expérience assez surprenante, avec la rencontre de la reine
+                            d'Angletrerre. Super voyage, un peu court."</p>
                         <div class="stars">
                         </div>
                     </div>
                 </div>
             </div>
 
-    <!-- Ta section ou image -->
+    <!-- Section fade-in -->
     <section>
     <div class="fade-in">
-
 <img class="fade-in" src="images/globeTrotters_AllInOne1.png" alt="">
-
     </div>
     </section>
 
@@ -155,7 +150,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <footer><!-- * droits / h6 -->
         <div class="droits">
-            <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
+            <h6>&copy; 2025 Projet_3. Les images furent générées grâce à l'IA ChatGPT. @onlineformapro
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
         </div>
@@ -166,7 +161,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 document.addEventListener('DOMContentLoaded', () => {
 
     const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
-    const links = document.getElementById('navLinks') as HTMLUListElement
+    const links = document.getElementById('navLinks') as HTMLUListElement;
     burger.addEventListener('click', function () {
         this.classList.toggle('active');
         links.classList.toggle('active');

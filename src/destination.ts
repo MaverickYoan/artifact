@@ -298,7 +298,7 @@ document.getElementById("app")!.innerHTML = `
                                 <figure class="relative w-full">
                                     <img src="/images/Londres/London%20Eye.jpg" class="w-full h-full object-cover" alt="London eye">
                                     <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 text-white md:opacity-0 group-hover:opacity-100 duration-300">
-                                        Vous voulez avoir une vue sur toute la ville de Londres ? Alors montez sur "London eye
+                                        Vous voulez avoir une vue sur toute la ville de Londres ? Alors montez sur "London eye"
                                     </figcaption>
                                 </figure>
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">

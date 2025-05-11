@@ -111,14 +111,6 @@ figcaption {
     margin: 1rem;
 }
 
-/* .hamburger-menu {
-    display: none;
-}
-
-.btntest:focus .hamburger-menu {
-    display: flex;
-} */
-
 .home {
     min-height: 100vh;
 }
@@ -136,7 +128,7 @@ figcaption {
     width: 100%
 }
 
-/* * crop image chat en cercle  */
+/* * crop image en cercle  */
 .logo {
     width: 50px;
     clip-path: circle(50% at 50% 50%)
@@ -155,7 +147,6 @@ figcaption {
 #home-logo {
     margin-top: 6rem;
 }
-
 
 .reservation,
 .droits {
@@ -183,6 +174,10 @@ figcaption {
     }
 }
 
+.container {
+    margin-left: 10rem;
+}
+
 @-webkit-keyframes fadein {
 
     /* sur Safari et Chrome */
@@ -194,15 +189,6 @@ figcaption {
         opacity: 1;
     }
 }
-
-/* 
-.carousel img {
-    transition: transform 0.5s cubic-bezier(.4, 2, .6, 1);
-}
-
-.carousel img:hover {
-    transform: scale(1.05);
-} */
 
 .email-contact {
     color: rgb(255, 170, 0);
@@ -271,6 +257,11 @@ figcaption {
 
     .fade-in img {
         width: 100%
+    }
+
+    .container {
+        display: block;
+        justify-self: center;
     }
 
 }

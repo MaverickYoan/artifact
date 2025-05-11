@@ -142,7 +142,7 @@ figcaption {
 }
 
 #home {
-    color: black;
+    color: rgb(35, 59, 59);
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'liberation', serif; */
     font-weight: 900;
@@ -171,6 +171,7 @@ figcaption {
 .navbar,
 .nav-links {
     mix-blend-mode: difference;
+    z-index: 99;
 }
 
 .dropdown {
