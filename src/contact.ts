@@ -37,7 +37,7 @@ document.getElementById('app')!.innerHTML = `
                 <label for="email">E-mail: </label>
                 <input type="text" name="email" class="border"><br>
             </div>
-        <input type="submit">
+            <input type="submit" class="btn">
         </form>
     </section>
         
