@@ -17,7 +17,7 @@ document.getElementById('app')!.innerHTML = `
 
     <section class="home"><!-- home / h1 / id home / img -->
         <nav class="navbar">
-            <h1 id="home">GlobeTrotters</h1>
+            <h1 id="home" class="w-1/2">GlobeTrotters</h1>
             <div class="hamburger-menu" id="hamburgerMenu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -30,12 +30,16 @@ document.getElementById('app')!.innerHTML = `
             </ul>
         </nav>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
-        </section>
-        <form method="post">
-        Name: <input type="text" name="name"><br>
-        E-mail: <input type="text" name="email"><br>
+        <form method="post" class="text-black bg-white absolute top-1/2 -translate-y-1/2 left-0 md:left-20 right-0 md:right-20 p-20">
+            <label for="name">Name: </label>
+            <input type="text" name="name" class="border"><br>
+            <div class="py-5">
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" class="border"><br>
+            </div>
         <input type="submit">
         </form>
+    </section>
         
 <!-- Contact Section -->
     <br>

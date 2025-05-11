@@ -59,10 +59,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*background-color: #000000; */
-    /*background-color: transparent;*/
-    /*padding: 10px 20px;*/
     right: 0;
+    z-index: 50;
 }
 
 /* Paramètre - .nav-links */
@@ -140,7 +138,7 @@ figcaption {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 36pt;
+    /*font-size: 36pt;*/
     display: flex;
     justify-self: left;
     margin-left: 0.5rem;
@@ -196,10 +194,10 @@ figcaption {
     /* body {
         align-items: center;
     } */
-    .navbar,
-    .nav-links {
-        mix-blend-mode: difference;
-    }
+    /*.navbar,*/
+    /*.nav-links {*/
+    /*    mix-blend-mode: difference;*/
+    /*}*/
 
     .nav-links {
         display: none;
