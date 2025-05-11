@@ -1,24 +1,14 @@
-import '../css/style-contact.css'
+import '../css/style-contact.css';
+import './style.css';
 
 document.getElementById('app')!.innerHTML = `
-    <nav class="navbar bg-[url('images/Tibet/Tibet (8).jpg')]">
-        <div class="hamburger-menu" id="hamburgerMenu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="../index.html">À propos</a></li>
-            <li><a href="../destination.html">Destination</a></li>
-            <li><a href="../contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    
 
     <!-- * background -->
 
     <style>
         .home {
-            background: url("images/globeTrotters_AllInOne0.png");
+            background: url("/images/globeTrotters_AllInOne0.png");
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
@@ -26,24 +16,36 @@ document.getElementById('app')!.innerHTML = `
     </style>
 
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">GlobeTrotters</h1>
+        <nav class="navbar">
+            <h1 id="home" class="w-1/2">GlobeTrotters</h1>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">À propos</a></li>
+                <li><a href="../destination.html">Destination</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
-        </section>
-
-
-        <br>
-        <br>
-        <form action="welcome.php" method="post">
-        Name: <input type="text" name="name"><br>
-        E-mail: <input type="text" name="email"><br>
-        <input type="submit">
+        <form method="post" class="text-black bg-white absolute top-1/2 -translate-y-1/2 left-0 md:left-20 right-0 md:right-20 p-20">
+            <label for="name">Name: </label>
+            <input type="text" name="name" class="border"><br>
+            <div class="py-5">
+                <label for="email">E-mail: </label>
+                <input type="text" name="email" class="border"><br>
+            </div>
+            <input type="submit" class="btn">
         </form>
+    </section>
         
 <!-- Contact Section -->
     <br>
     <div>
 <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto">
             <h2 class="text-3xl font-bold flex items-start mb-12 text-gray-800">Contactez-nous</h2>
             <div class="flex flex-col md:flex-row">
                 <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
@@ -96,7 +98,7 @@ document.getElementById('app')!.innerHTML = `
     <section>
     <div class="fade-in">
 
-<img class="fade-in" src="images/globeTrotters_AllInOne2.png" alt="">
+<img class="fade-in" src="../images/GlobeTrotters_AllInOne2.png" alt="">
 
     </div>
     </section>

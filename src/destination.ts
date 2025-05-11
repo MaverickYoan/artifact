@@ -303,6 +303,13 @@ document.getElementById("app")!.innerHTML = `
                                 </div>
                             </div>
                         </div>
+                        <div class="flex w-full justify-center gap-2 py-2">
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="londres1">1</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="londres2">2</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="londres3">3</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="londres4">4</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="londres5">5</a>
+                        </div>
                     </div>
                 </div>
             </section>

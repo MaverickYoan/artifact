@@ -3,6 +3,6 @@
 
 @layer base {
   h1 {
-    @apply text-5xl font-semibold py-5;
+    @apply text-xl md:text-5xl font-semibold py-5;
   }
 }
