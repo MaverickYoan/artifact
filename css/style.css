@@ -137,8 +137,19 @@ figcaption {
 
 /* * crop image en cercle  */
 .logo {
+    margin-left: 3rem;
+    margin-bottom: 1rem;
     width: 50px;
     clip-path: circle(50% at 50% 50%)
+}
+
+.dropdown,
+.menu,
+.logo,
+summary {
+    display: block;
+    justify-self: center;
+    align-items: center;
 }
 
 #home {

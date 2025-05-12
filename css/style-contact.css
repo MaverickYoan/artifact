@@ -268,3 +268,8 @@ figcaption {
 form {
     opacity: 0.9;
 }
+
+#href {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}

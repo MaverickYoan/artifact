@@ -83,16 +83,16 @@ document.getElementById('app')!.innerHTML = `
             </div>
         </form>
     </section>
+        <a id="href" href="https://www.ou-et-quand.net/" target="_blank">Pour plus d'informations</a>
 
     <!-- * FOOTER -->
 
     <footer><!-- * droits / h6 -->
         <div class="droits">
-            <h6>&copy; 2025 Projet_3. Tous droits réservés. Les images furent générées grâce à l'IA ChatGPT. @onlineformapro
+            <h6>&copy; 2025 Projet_3. Tous droits réservés. Les images furent générées grâce à l'IA ChatGPT. @onlineformapro -
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
-            <a class="agrees" href="" target="_blank">
-            </a>
+            <a class="agrees" href="https://www.ou-et-quand.net/" target="_blank">- Pour plus d'informations</a>
         </div>
     </footer>
 

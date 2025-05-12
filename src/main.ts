@@ -16,9 +16,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </nav>
     
     <!-- * home section -->
-
     <section class="home"><!-- home / h1 / id home / img -->
-        <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
         <h1 id="home">GlobeTrotters</h1>
     </section>
 
@@ -65,21 +63,49 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </div>
     <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
     <details class="dropdown">
-    <summary class="btn m-1">Destinations</summary>
-        <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li><a class="li-destination" href="destination.html">Seychelles</a></li>
-            <li><a class="li-destination" href="destination.html">Tibet</a></li>
-            <li><a class="li-destination" href="http://localhost:5173/destination.html#">Londres</a></li>
-            <a></a>
-        </ul>
-    
-    </details>
-    <!-- * Témoignages Section -->
-<h1 id="slogan">Un voyage inoubliable au sein de notre agence GlobeTrotters.
+    <summary class="btn m-1">Cliquez-moi</summary>
+        <h1 id="slogan">Pour un voyage inoubliable au sein de notre agence GlobeTrotters.
             <br>
             <br>
             Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.
         </h1>
+                <img class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
+
+<!-- * Tableau Section -->
+<table class="table" border="1">
+    <th>Gamme de prix</th>
+    <th>Caractéristiques</th>
+    <th>Prix</th>
+    <tr>
+        <td>Vacances économiques</td>
+        <td>Séjournez dans des maisons d'hôtes, des vols pas chers, des plats à emporter de base ou des
+            hébergements seuls</td>
+        <td>environ 1 600 € à 2 300 € par personne pendant deux semaines</td>
+    </tr>
+    <tr>
+        <td>Des vacances confort</td>
+        <td>Séjour dans des hôtels 3 à 4 étoiles, vols à prix normaux, circuits de 1 à 2 jours, visites de
+            restaurants</td>
+        <td>environ 2.500 € à 5.000 € par personne pour deux semaines</td>
+    </tr>
+    <tr>
+        <td>Vacances dans un resort Hôtels 5 étoiles</td>
+        <td>vols en classe affaires, excursions d'une journée, gastronomie</td>
+        <td>environ 6.000 à
+            10.000 € par personne pour deux semaines</td>
+    </tr>
+</table>
+
+    <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li><a class="li-destination" href="destination.html">Seychelles</a></li>
+            <li><a class="li-destination" href="destination.html">Tibet</a></li>
+            <li><a class="li-destination" href="destination.html">Londres</a></li>
+            <a></a>
+        </ul>
+
+        </details>
+    <!-- * Témoignages Section -->
+
         
         <section class="une" id="avis">
             <div class="container-une">

@@ -160,6 +160,7 @@ document.getElementById("app")!.innerHTML = `
                     <div class="flex flex-col text-center order-1 md:order-2">
                         <p>Destination 2</p>
                         <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une autre destination aux Seychelles</p>
+                        
                     </div>
                     <div class="order-2 md:order-1">
                         <div class="carousel w-full">
