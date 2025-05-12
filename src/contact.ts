@@ -8,7 +8,7 @@ document.getElementById('app')!.innerHTML = `
 
     <style>
         .home {
-            background: url("/images/globeTrotters_AllInOne0.png");
+            background: url("/images/globeTrotters_AllInOne2.png");
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
@@ -38,25 +38,11 @@ document.getElementById('app')!.innerHTML = `
                 <input type="text" name="email" class="border"><br>
             </div>
             <input type="submit" class="btn">
-        </form>
-    </section>
-        
-<!-- Contact Section -->
-    <br>
-    <div>
-<section id="contact" class="py-16 bg-white">
+
+             <h2 class="text-3xl font-bold flex items-start mb-12 text-gray-800">Contactez-nous</h2>
         <div class="container mx-auto">
-            <h2 class="text-3xl font-bold flex items-start mb-12 text-gray-800">Contactez-nous</h2>
             <div class="flex flex-col md:flex-row">
-                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
-                    <h3 class="text-xl font-semibold mb-4 text-gray-800">Informations de contact</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="bg-green-100 p-2 rounded-full mr-4">
-                                <i class="fas fa-map-marker-alt text-blue-600"></i>
-                            </div>
-                            
-                        </div>
+                    <h3 class="text-xxl font-semibold mb-4 text-gray-800">Informations de contact</h3>
                         <div class="flex items-start">
                             <div class="bg-green-100 p-2 rounded-full mr-4">
                                 <i class="fas fa-phone text-green-600"></i>
@@ -87,20 +73,7 @@ document.getElementById('app')!.innerHTML = `
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-        </div>  
-    <br>
-    <br>
-    <br>
-    <!-- Ta section ou image -->
-    <section>
-    <div class="fade-in">
-
-<img class="fade-in" src="../images/GlobeTrotters_AllInOne2.png" alt="">
-
-    </div>
+        </form>
     </section>
 
 

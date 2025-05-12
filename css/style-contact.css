@@ -145,14 +145,25 @@ figcaption {
 }
 
 #home-logo {
-    margin-top: 6rem;
+    margin-top: 14rem;
+    margin-left: 1rem;
+}
+
+.font-larger {
+    color: rgb(0, 0, 0);
+}
+
+.mx-auto {
+    display: flex;
+    justify-self: center;
 }
 
 .reservation,
 .droits {
     display: flex;
     justify-self: center;
-    font-size: small;
+    font-size: 6pt;
+    font-weight: 900;
 }
 
 .navbar {
