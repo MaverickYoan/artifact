@@ -80,19 +80,19 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <td>Vacances économiques</td>
         <td>Séjournez dans des maisons d'hôtes, des vols pas chers, des plats à emporter de base ou des
             hébergements seuls</td>
-        <td>environ 1 600 € à 2 300 € par personne pendant deux semaines</td>
+        <td>1 600 € à 2 300 € par pers. pendant 2 semaines</td>
     </tr>
     <tr>
         <td>Des vacances confort</td>
         <td>Séjour dans des hôtels 3 à 4 étoiles, vols à prix normaux, circuits de 1 à 2 jours, visites de
             restaurants</td>
-        <td>environ 2.500 € à 5.000 € par personne pour deux semaines</td>
+        <td>2.500 € à 5.000 € par pers. pour 2 semaines</td>
     </tr>
     <tr>
         <td>Vacances dans un resort Hôtels 5 étoiles</td>
         <td>vols en classe affaires, excursions d'une journée, gastronomie</td>
-        <td>environ 6.000 à
-            10.000 € par personne pour deux semaines</td>
+        <td>6.000 à
+            10.000 € par pers. pour 2 semaines</td>
     </tr>
 </table>
 
