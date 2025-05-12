@@ -263,6 +263,10 @@ figcaption {
     /*    justify-self: center;*/
     /*}*/
 
+    form {
+        margin-top: 5vh;
+    }
+
 }
 
 form {
@@ -270,6 +274,6 @@ form {
 }
 
 #href {
-    margin-left: 1rem;
+    margin-left: 35%;
     margin-bottom: 1rem;
 }

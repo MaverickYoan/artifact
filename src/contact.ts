@@ -83,8 +83,10 @@ document.getElementById('app')!.innerHTML = `
             </div>
         </form>
     </section>
+    <br>
         <a id="href" href="https://www.ou-et-quand.net/" target="_blank">Pour plus d'informations</a>
-
+<br>
+<br>
     <!-- * FOOTER -->
 
     <footer><!-- * droits / h6 -->
