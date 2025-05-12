@@ -170,6 +170,8 @@ figcaption {
 
 .navbar,
 .nav-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
     mix-blend-mode: difference;
     z-index: 99;
 }
@@ -229,6 +231,12 @@ img {
     }
 }
 
+details {
+    width: 100%;
+    display: grid;
+    justify-self: center;
+}
+
 /* * bordures blanches autour Témoignages*/
 .grid,
 .text-une {
@@ -237,7 +245,7 @@ img {
 
 /* * padding background témoignages section */
 .une {
-    padding: 16px
+    padding: 8px
 }
 
 /* * Témoignages */
@@ -267,9 +275,16 @@ img {
     margin-right: 4px;
     align-items: center;
     border: 2px solid green;
-    width: 25%;
+    width: 50%;
     font-size: 1rem;
     padding: .5rem;
+}
+
+.une-font,
+.tem1 {
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
 
 /* * commentaires témoignages */

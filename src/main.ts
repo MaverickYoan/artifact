@@ -18,8 +18,8 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <!-- * home section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
-        <h1 id="home">GlobeTrotters</h1>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
+        <h1 id="home">GlobeTrotters</h1>
     </section>
 
     <!-- * animation plane -->
@@ -63,40 +63,34 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="sky">
         <img src="images/plane.png" alt="Image d'un avion de ligne">
     </div>
-
     <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
-
-    <details class="dropdown"><h1 id="slogan">Un voyage inoubliable au sein de notre agence GlobeTrotters.
-            <br>
-            <br>
-            Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.
-            <br>
-            <br>
-            Au choix
-        </h1>
-        <summary class="btn m-1">Destinations</summary>
+    <details class="dropdown">
+    <summary class="btn m-1">Destinations</summary>
         <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
             <li><a class="li-destination" href="destination.html">Seychelles</a></li>
             <li><a class="li-destination" href="destination.html">Tibet</a></li>
-            <li><a class="li-destination" href="destination.html">Londres</a></li>
+            <li><a class="li-destination" href="http://localhost:5173/destination.html#">Londres</a></li>
             <a></a>
         </ul>
+    
     </details>
-
     <!-- * Témoignages Section -->
-
+<h1 id="slogan">Un voyage inoubliable au sein de notre agence GlobeTrotters.
+            <br>
+            <br>
+            Avec les Seychelles, ce petit bout de paradis, le charme majestueux du Tibet ou London City, the place to be.
+        </h1>
+        
         <section class="une" id="avis">
             <div class="container-une">
 
                 <!-- Témoignage 1 -->
                 <h2 class="text-une">Témoignages</h2>
                 <div class="grid">
+                    <h4 class="une-font">Paul Eluard</h4>
                     <div class="tem1">
                         <div class="tem1">
-                            <div class="entete"> P.E</div>
-                            <div>
-                                <h4 class="une-font">Paul Eluard</h4>
-                            </div>
+                            <div class="entete">P.E</div>
                         </div>
                         <p class="une-comm-font">"Notre voyage au Tibet fut magique avec ce moment passé au près du Dalaï Lama. Nous vous remercions." </p>
                         <div class="stars">
@@ -107,12 +101,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
                 <!-- Témoignage 2 -->
                 <div class="grid">
+                    <h4 class="une-font">Léon Blum</h4>
                     <div class="tem1">
                         <div class="tem1">
-                            <div class="entete"> L.B</div>
-                            <div>
-                                <h4 class="une-font">Léon Blum</h4>
-                            </div>
+                            <div class="entete">L.B</div>
                         </div>
                         <p class="une-comm-font">"Malgrès un départ retardé par ces intempéries. L'arrivée sur cette
                             magnifique plage des Seychelles nous a tout fait oublié. Nous y retournerons."
@@ -124,12 +116,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
                 <!-- Témoignage 3 -->
                 <div class="grid">
+                    <h4 class="une-font">Jean Delafontaine</h4>
                     <div class="tem1">
                         <div class="tem1">
-                            <div class="entete"> J.D</div>
-                            <div>
-                                <h4 class="une-font">Jean Delafontaine</h4>
-                            </div>
+                            <div class="entete">J.D</div>
                         </div>
                         <p class="une-comm-font">"Merci, Londres fut une expérience assez surprenante, avec la rencontre de la reine
                             d'Angletrerre. Super voyage, un peu court."</p>
@@ -154,7 +144,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
         </div>
-
     </footer>
 `
 // * script mobile menu

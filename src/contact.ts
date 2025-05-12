@@ -76,7 +76,6 @@ document.getElementById('app')!.innerHTML = `
         </form>
     </section>
 
-
     <!-- * FOOTER -->
 
     <footer><!-- * droits / h6 -->
@@ -87,10 +86,10 @@ document.getElementById('app')!.innerHTML = `
             <a class="agrees" href="" target="_blank">
             </a>
         </div>
-
     </footer>
 
 `
+
 // * script mobile menu
 document.addEventListener('DOMContentLoaded', () => {
 
