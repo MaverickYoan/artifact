@@ -8,7 +8,7 @@ document.getElementById('app')!.innerHTML = `
 
     <style>
         .home {
-            background: url("/images/globeTrotters_AllInOne2.png");
+            background: url("/images/globeTrotters_AllInOne0.png");
             background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
