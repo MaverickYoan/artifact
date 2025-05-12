@@ -17,32 +17,37 @@ document.getElementById('app')!.innerHTML = `
 
     <section class="home"><!-- home / h1 / id home / img -->
         <nav class="navbar">
-            <h1 id="home" class="w-1/2">GlobeTrotters</h1>
-            <div class="hamburger-menu" id="hamburgerMenu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="container mx-auto flex items-center justify-between">
+                <h1 id="home">GlobeTrotters</h1>
+                <div class="flex items-center gap-5">
+                    <div class="hamburger-menu" id="hamburgerMenu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="../index.html">À propos</a></li>
+                        <li><a href="../destination.html">Destination</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="../index.html">À propos</a></li>
-                <li><a href="../destination.html">Destination</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
         </nav>
         <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
-        <form method="post" class="text-black bg-white absolute top-1/2 -translate-y-1/2 left-0 md:left-20 right-0 md:right-20 p-20">
-            <label for="name">Name: </label>
-            <input type="text" name="name" class="border"><br>
-            <div class="py-5">
-                <label for="email">E-mail: </label>
-                <input type="text" name="email" class="border"><br>
+        <form method="post" class="text-black bg-white absolute top-1/2 -translate-y-1/2 left-0 md:left-20 right-0 md:right-20 p-20 grid xl:grid-cols-2 gap-10">
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" name="name" class="border border-gray-300 w-full"><br>
+                <div class="py-5">
+                    <label for="email">E-mail: </label>
+                    <input type="text" name="email" class="border border-gray-300 w-full"><br>
+                </div>
+                <input type="submit" class="btn">
             </div>
-            <input type="submit" class="btn">
-
-             <h2 class="text-3xl font-bold flex items-start mb-12 text-gray-800">Contactez-nous</h2>
-        <div class="container mx-auto">
-            <div class="flex flex-col md:flex-row">
-                    <h3 class="text-xxl font-semibold mb-4 text-gray-800">Informations de contact</h3>
+            <div class="text-center grow">
+                <h2 class="text-3xl font-bold flex items-start justify-center mb-12 text-gray-800">Contactez-nous</h2>
+                <div>
+                    <div class="flex flex-col md:flex-row gap-5 justify-between flex-wrap">
                         <div class="flex items-start">
                             <div class="bg-green-100 p-2 rounded-full mr-4">
                                 <i class="fas fa-phone text-green-600"></i>
@@ -73,6 +78,7 @@ document.getElementById('app')!.innerHTML = `
                         </div>
                     </div>
                 </div>
+            </div>
         </form>
     </section>
 

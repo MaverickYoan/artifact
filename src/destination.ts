@@ -2,7 +2,7 @@ import "./style.css"
 
 document.getElementById("app")!.innerHTML = `
     <div class="min-h-screen bg-black text-white font-montserrat flex flex-col">
-        <header class="container mx-auto relative flex md:grid grid-cols-3 justify-between items-center pt-10 md:p-0">
+        <header class="container mx-auto flex md:grid grid-cols-3 justify-between items-center pt-10 md:p-0 sticky top-0 z-50 bg-black/75">
             <h1 class="hidden md:block">GlobeTrotters</h1>
             <img alt="Logo" class="w-12.5 mx-auto rounded-full"
                  src="/images/logo.png">

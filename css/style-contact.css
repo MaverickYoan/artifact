@@ -153,10 +153,6 @@ figcaption {
     color: rgb(0, 0, 0);
 }
 
-.mx-auto {
-    display: flex;
-    justify-self: center;
-}
 
 .reservation,
 .droits {
@@ -213,7 +209,7 @@ figcaption {
     .nav-links {
         display: none;
         flex-direction: column;
-        width: 100%;
+        /*width: 100%;*/
     }
 
     .nav-links li {
@@ -265,10 +261,10 @@ figcaption {
         width: 100%
     }
 
-    .container {
-        display: block;
-        justify-self: center;
-    }
+    /*.container {*/
+    /*    display: block;*/
+    /*    justify-self: center;*/
+    /*}*/
 
 }
 
