@@ -15,7 +15,7 @@ document.getElementById('app')!.innerHTML = `
         }
     </style>
 
-    <section class="home"><!-- home / h1 / id home / img -->
+    <section class="home">
         <nav class="navbar">
             <div class="container mx-auto flex items-center justify-between">
                 <h1 id="home">GlobeTrotters</h1>
@@ -33,7 +33,9 @@ document.getElementById('app')!.innerHTML = `
                 </div>
             </div>
         </nav>
-        <img  id="home-logo" class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
+    
+        <img alt="Logo" id="logo" class="w-12.5 mx-auto rounded-full" src="/images/logo.png">
+
         <form method="post" class="text-black bg-white absolute top-1/2 -translate-y-1/2 left-0 md:left-20 right-0 md:right-20 p-20 grid xl:grid-cols-2 gap-10">
             <div>
                 <label for="name">Name: </label>

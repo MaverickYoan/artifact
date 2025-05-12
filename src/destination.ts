@@ -34,6 +34,7 @@ document.getElementById("app")!.innerHTML = `
                 </button>
                 <a href="/index.html">Accueil</a>
                 <a href="#destinations" id="destinations-mobile">Destinations</a>
+                <a href="/contact.html">Contact</a>
             </nav>
         </header>
         <main class="container mx-auto grow">
