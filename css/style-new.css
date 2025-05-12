@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../polices/Montserrat-Italic-VariableFont_wght.ttf'),
+        url('../polices/Montserrat-Regular.ttf'),
+        url('../polices/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url("../polices/Roboto-Italic-VariableFont_wdth,wght.ttf"),
+        url("../polices/Roboto-VariableFont_wdth,wght.ttf");
+}
+
+*::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(255, 255, 255, 0.2));
+    pointer-events: none;
+}
+
+/* créer des outlines sur tous les éléments de la page (permet un debuggage rapide)
+* {
+    border: 1px solid blue;
+} */
+
+/* Paramètre - body */
+body {
+    /* width: clamp(464px, 768px, 1240px); */
+    width: 100%;
+    /* color: rgb(0, 0, 0); */
+    color: white;
+    font-family: 'Montserrat', serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* background-color: white; */
+}
+
+/* Paramètre - .navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.70);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    z-index: 50;
+}
+
+/* Paramètre - .nav-links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Paramètre - .nav-links & li -  margin */
+
+/* Paramètre - .nav-links & a -  margin */
+.nav-links a {
+    /* color: white; */
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: 900;
+    text-decoration: none;
+    /*padding: 5px 10px;*/
+}
+
+.nav-links {
+    color: rgb(0, 0, 0);
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+figure {
+    display: flex;
+    flex-flow: row;
+}
+
+figcaption {
+    margin: 1rem;
+}
+
+.home {
+    min-height: 100vh;
+}
+
+.home img {
+    margin-left: 16.5%;
+    margin-top: 10%;
+
+    display: flex;
+    justify-content: center;
+    opacity: 100%;
+}
+
+.fade-in img {
+    width: 100%
+}
+
+/* * crop image en cercle  */
+#logo {
+    width: 50px;
+    clip-path: circle(50% at 50% 50%);
+    margin-top: 15rem;
+    margin-left: 1rem;
+}
+
+#home {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    /*font-size: 36pt;*/
+    display: flex;
+    justify-self: left;
+    margin-left: 0.5rem;
+}
+
+.font-larger {
+    color: rgb(0, 0, 0);
+}
+
+
+.reservation,
+.droits {
+    display: flex;
+    justify-self: center;
+    font-size: 6pt;
+    font-weight: 900;
+}
+
+.navbar {
+    color: rgb(0, 0, 0);
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*.container {*/
+/*    margin-left: 10rem;*/
+/*}*/
+
+@-webkit-keyframes fadein {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.email-contact {
+    color: rgb(255, 170, 0);
+}
+
+@media (max-width: 768px) {
+
+    /* body {
+        align-items: center;
+    } */
+    /*.navbar,*/
+    /*.nav-links {*/
+    /*    mix-blend-mode: difference;*/
+    /*}*/
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        /*width: 100%;*/
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Disposition du menu burger */
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 5px);
+        /* transform: translateY(0px) rotate(-135deg); */
+    }
+
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(10px, -5px);
+        /* transform: translateY(0px) rotate(135deg); */
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figcaption {
+        margin: 0;
+    }
+
+    .home img {
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+
+    }
+
+    .fade-in img {
+        width: 100%
+    }
+
+    /*.container {*/
+    /*    display: block;*/
+    /*    justify-self: center;*/
+    /*}*/
+
+    form {
+        margin-top: 5vh;
+    }
+
+}
+
+form {
+    opacity: 0.9;
+}
+
+#href {
+    margin-left: 35%;
+    margin-bottom: 1rem;
+}

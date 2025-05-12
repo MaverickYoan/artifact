@@ -12,6 +12,7 @@ document.getElementById("app")!.innerHTML = `
                 <a href="../index.html">Welcome</a>
                 <a href="#destinations">Destinations</a>
                 <a href="../contact.html">Contact</a>
+                <a href="../new.html">New</a>
             </nav>
         
             <!--Menu burger-->
@@ -35,6 +36,7 @@ document.getElementById("app")!.innerHTML = `
                 <a href="/index.html">Accueil</a>
                 <a href="#destinations" id="destinations-mobile">Destinations</a>
                 <a href="/contact.html">Contact</a>
+                <a href="/new.html">New</a>
             </nav>
         </header>
         <main class="container mx-auto grow">

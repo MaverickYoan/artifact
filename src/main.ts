@@ -12,6 +12,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <li><a href="/index.html">À propos</a></li>
             <li><a href="/destination.html">Destination</a></li>
             <li><a href="/contact.html">Contact</a></li>
+            <li><a href="../new.html">New</a></li>
         </ul>
     </nav>
     
