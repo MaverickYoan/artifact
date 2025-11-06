@@ -1,8 +1,8 @@
 Voici notre fichier Readme.md
 
-Projet Agence de Voyages : HTML + CSS Outils : Figma, VSCode, Git, GitHub Travail en binôme 
+Projet Agence de Voyages : HTML + CSS Outils : Figma, VSCode, Git, GitHub Travail en binôme (Florian et Yoan) 
 
-Objectif : Concevoir et développer un website pour une agence de voyage fictive, avec une page d’accueil et une page destination
+Objectif : Concevoir et développer un website pour une agence de voyage fictive, avec une page d’accueil et une page destination 
 
 <u>Légende :</u>
 
@@ -15,10 +15,9 @@ NOK = 🟧 <br>
 
 🗂️ Structure du site Le site doit contenir au minimum deux pages : 🟩
 
-Page d’accueil (index.html) 
-Page destinations (destinations.html) 
-Page conytact (contact.html) 
-
+Page d’accueil (index.html) 🟩
+Page destinations (destinations.html) 🟩
+Page conytact (contact.html) 🟩
 
 
 🎨 Étape 1 : Maquette Figma (à faire avant le code) 🟨
@@ -26,8 +25,8 @@ Page conytact (contact.html)
 ➤ À produire :
 Une maquette desktop + mobile pour : La page d’accueil Une page destination Respecter une charte graphique cohérente (couleurs, polices, boutons)
 
-➤ Travail collaboratif :
-Le binôme travaille ensemble sur le même fichier Figma (mode collaboratif)
+➤ Travail en binôme :
+Le binôme travaille ensemble sur le même fichier Figma (mode coop)
 
 💻 Étape 2 : Développement HTML/CSS
 
@@ -40,6 +39,11 @@ Hero avec image, slogan, CTA Grille de destinations cliquables Témoignages clie
 Contenu à intégrer :
 
 Image de couverture + titre Description du lieu Liste ou cartes des points d’intérêt Infos pratiques (météo, période, etc.) Galerie d’images responsive Lien retour vers la page d’accueil 🧪 Mise en ligne avec Git & GitHub
+
+
+➤ Page de contact (contact.html)
+Contenu à intégrer :
+Formulaire de contact (nom, email, message) Informations de contact (adresse, téléphone, email) Carte intégrée (Google Maps) Bouton d’envoi (non-fonctionnel) Footer avec liens
 
 ➤ Organisation Git/GitHub :
 Créez un dépôt GitHub commun au groupe Utilisez les commits fréquents avec messages clairs
