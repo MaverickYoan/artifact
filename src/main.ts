@@ -98,10 +98,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 </table>
 
     <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li><a class="li-destination" href="destination.html">Seychelles</a></li>
-            <li><a class="li-destination" href="destination.html">Tibet</a></li>
-            <li><a class="li-destination" href="destination.html">Londres</a></li>
-            <a></a>
+        <li><a class="li-destination" href="destination.html">Tibet</a></li>
+        <li><a class="li-destination" href="destination.html">Seychelles</a></li>
+        <li><a class="li-destination" href="destination.html">Londres</a></li>
         </ul>
 
         </details>
